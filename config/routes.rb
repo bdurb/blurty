@@ -1,5 +1,7 @@
 Blurty::Application.routes.draw do
     root 'quotes#index'
+    resources :quotes
+    get 'about', to: 'quotes#about'
 
     resources :quotes
   # The priority is based upon order of creation: first created -> highest priority.
