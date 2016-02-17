@@ -9,6 +9,7 @@
 <body>
 	<header>
 		<div class="col-xs-3">
+		<%= link_to root_path, class: 'logo' do %>
 		 <div class="circle">
 		  <br />
 		  Keep
@@ -17,12 +18,13 @@
 		  <br />
 		  Forward!
 		</div>
+		<% end %>
 		 </div>
 		<div class="col-xs-4 slogan"> 
 		Blurting out needed advice about motivation since 2016
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', new_quote_path %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
@@ -38,7 +40,7 @@
 	<div class="footer">
 	<div class="container">
 		<div class="col-xs-6">
-		 <%= link_to "I'm hungry for more tasty quotes!", "#" , class: 'next-quote' %>
+		 <%= link_to "I'm hungry for more tasty quotes!", root_path , class: 'next-quote' %>
 		 </div>
 		 <div class="col-xs-6 footer-blurb">
 		  Stumblecoded by Brian
